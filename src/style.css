@@ -63,15 +63,16 @@ h1 {
   justify-content: center;
 }
 .current-temp-icon {
-  font-size: 50px;
-  margin-top: 10px;
+  width: 100px;
+  height: 100px;
 }
 .current-temp-value {
   font-size: 80px;
+  line-height: 80px;
+  margin-top: 20px;
 }
 
 .current-temp-unit {
-  margin-top: 20px;
   font-size: 20px;
 }
 .current-temp-details {
