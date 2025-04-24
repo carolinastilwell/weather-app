@@ -1,0 +1,12 @@
+body {
+  background-color: #dcdbf6;
+  font-family: "Overpass", sans-serif;
+}
+.app {
+  background: white;
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 35px;
+  box-shadow: 0 30px 50px reba(65, 50, 100, 0.08);
+  border-radius: 20px;
+}

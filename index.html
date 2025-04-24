@@ -3,34 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>London</h1>
-        Thursday 10:55, 24 of April
-      </div>
-      <div>☀️ 20°C</div>
-      <div>Humidity: 80%, Wind: 3.13km/h</div>
-      <div>Forecast</div>
-    </main>
+    <div class="app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>London</h1>
+          Thursday 10:55, 24 of April
+        </div>
+        <div>☀️ 20°C</div>
+        <div>Humidity: 80%, Wind: 3.13km/h</div>
+        <div>Forecast</div>
+      </main>
 
-    <footer>
-      This project was coded with ❤️ by
-      <a href="https://github.com/carolinastilwell" target="_blank"
-        >Carolina Terra Stilwell</a
-      >
-      and is on
-      <a href="https://github.com/carolinastilwell/weather-app" target="_blank"
-        >GitHub</a
-      >
-    </footer>
+      <footer>
+        This project was coded with ❤️ by
+        <a href="https://github.com/carolinastilwell" target="_blank"
+          >Carolina Terra Stilwell</a
+        >
+        and is on
+        <a
+          href="https://github.com/carolinastilwell/weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
