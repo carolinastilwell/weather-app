@@ -73,6 +73,7 @@ h1 {
 }
 
 .current-temp-unit {
+  margin-top: 20px;
   font-size: 20px;
 }
 .current-temp-details {
