@@ -80,3 +80,26 @@ if (hour < 10) {
 let formatTime = `${day} ${hour}:${minutes}, ${date} of ${month}`;
 let timeElement = document.querySelector("#current-date-time");
 timeElement.innerHTML = formatTime;
+
+function displayForecast() {
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temp-max"> 15°</span>
+              <span class="weather-forcast-temp-min">9°</span>
+            </div>
+          </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
