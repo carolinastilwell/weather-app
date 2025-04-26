@@ -104,8 +104,7 @@ h1 {
 }
 
 .weather-forecast-icon {
-  font-size: 30px;
-  margin-bottom: 10px;
+  width: 45px;
 }
 .weather-forecast-temperatures {
   color: #8d89f5;
