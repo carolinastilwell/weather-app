@@ -24,9 +24,10 @@ header {
   background-color: #e7e7f4;
   border: none;
   border-radius: 4px;
-  width: 75%;
+  width: 80%;
   padding: 15px 20px;
   font-size: 14px;
+  margin-top: 10px;
 }
 
 .search-form-button {
@@ -38,6 +39,7 @@ header {
   font-size: 14px;
   margin-left: 2px;
   transition: all 200ms ease-in-out;
+  margin-top: 10px;
 }
 
 .search-form-button:hover {
