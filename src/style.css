@@ -85,6 +85,35 @@ h1 {
 .current-temp-details strong {
   color: #8d89f5;
 }
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.weather-forecast-day {
+  text-align: center;
+  font-size: 12px;
+}
+.weather-forecast-date {
+  color: rgba(39, 33, 66, 0.6);
+  line-height: 20px;
+}
+
+.weather-forecast-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.weather-forecast-temperatures {
+  color: #8d89f5;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temp-max {
+  padding: 0 5px;
+  font-weight: bold;
+}
 footer {
   border-top: 1px;
   padding: 30px 0 0 0;
