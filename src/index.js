@@ -37,51 +37,13 @@ searchForm.addEventListener("submit", handleSearch);
 
 searchCity("London");
 
-// Dates
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-let now = new Date();
-let day = days[now.getDay()];
-let month = months[now.getMonth()];
-let hour = now.getHours();
-let minutes = now.getMinutes();
-let date = now.getDate();
-
-if (minutes < 10) {
-  minutes = `0${minutes}`;
+// Date
+function displayTime() {
+  let currentTime = moment().format("dddd HH:mm:ss, Do of MMMM YYYY");
+  let timeElement = document.querySelector("#current-date-time");
+  timeElement.innerHTML = currentTime;
 }
-
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-
-let formatTime = `${day} ${hour}:${minutes}, ${date} of ${month}`;
-let timeElement = document.querySelector("#current-date-time");
-timeElement.innerHTML = formatTime;
+setInterval(displayTime, 1000);
 
 // Forecast
 function formatDay(timestamp) {
